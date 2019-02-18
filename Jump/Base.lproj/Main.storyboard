@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jump" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jump" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-jq-3tG">
+                                <rect key="frame" x="192" y="0.0" width="576" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pxx-jq-3tG" secondAttribute="height" multiplier="9:16" id="taq-g6-Jyd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rect" translatesAutoresizingMaskIntoConstraints="NO" id="x1M-ZY-CEd">
+                                <rect key="frame" x="376.5" y="327.5" width="207" height="369"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-qW-7rg">
+                                <rect key="frame" x="24" y="968" width="83" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="-40" minY="43" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="21" minY="-16" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="GUIDE" image="guide_btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4D-q4-EZy">
+                                <rect key="frame" x="24" y="872" width="83" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="-40" minY="43" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="22" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="RESET" image="reset_btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtr-ck-sqQ">
+                                <rect key="frame" x="24" y="776" width="85" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="-40" minY="43" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="22" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="SETUP" image="gear_btn"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34184650955416929" green="0.42605432203452986" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nmf-qW-7rg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="3DB-PF-zv2"/>
+                            <constraint firstItem="x1M-ZY-CEd" firstAttribute="centerY" secondItem="Pxx-jq-3tG" secondAttribute="centerY" id="5Nq-dq-n1T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nmf-qW-7rg" secondAttribute="bottom" constant="16" id="6LU-H8-L7y"/>
+                            <constraint firstItem="x1M-ZY-CEd" firstAttribute="width" secondItem="Pxx-jq-3tG" secondAttribute="width" multiplier="36:100" id="EO2-yX-MzS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pxx-jq-3tG" secondAttribute="trailing" id="FD8-jF-CW3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rtr-ck-sqQ" secondAttribute="bottom" constant="16" id="IBA-Xv-mzO"/>
+                            <constraint firstItem="nmf-qW-7rg" firstAttribute="top" secondItem="O4D-q4-EZy" secondAttribute="bottom" constant="56" id="M81-Xb-9zW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O4D-q4-EZy" secondAttribute="bottom" constant="16" id="Sk8-nK-H4w"/>
+                            <constraint firstItem="Pxx-jq-3tG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wht-ej-ho8"/>
+                            <constraint firstItem="rtr-ck-sqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="YFs-6r-tnD"/>
+                            <constraint firstItem="O4D-q4-EZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="aOh-nc-6h1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rtr-ck-sqQ" secondAttribute="trailing" constant="24" id="cFq-FD-eBn"/>
+                            <constraint firstItem="Pxx-jq-3tG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i0e-TJ-tXr"/>
+                            <constraint firstItem="x1M-ZY-CEd" firstAttribute="height" secondItem="Pxx-jq-3tG" secondAttribute="height" multiplier="36:100" id="kKF-P7-KPo"/>
+                            <constraint firstItem="Pxx-jq-3tG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lel-hp-gJ7"/>
+                            <constraint firstItem="Pxx-jq-3tG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="mYz-2T-2Db"/>
+                            <constraint firstItem="O4D-q4-EZy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vgt-OA-fSW"/>
+                            <constraint firstItem="x1M-ZY-CEd" firstAttribute="centerX" secondItem="Pxx-jq-3tG" secondAttribute="centerX" id="xa9-i1-FFy"/>
+                            <constraint firstItem="O4D-q4-EZy" firstAttribute="top" secondItem="rtr-ck-sqQ" secondAttribute="bottom" constant="56" id="zl5-0h-tkO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FD8-jF-CW3"/>
+                                <exclude reference="mYz-2T-2Db"/>
+                                <exclude reference="YFs-6r-tnD"/>
+                                <exclude reference="aOh-nc-6h1"/>
+                                <exclude reference="zl5-0h-tkO"/>
+                                <exclude reference="M81-Xb-9zW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="FD8-jF-CW3"/>
+                                <exclude reference="IBA-Xv-mzO"/>
+                                <exclude reference="Sk8-nK-H4w"/>
+                                <exclude reference="cFq-FD-eBn"/>
+                                <exclude reference="Wht-ej-ho8"/>
+                                <exclude reference="i0e-TJ-tXr"/>
+                                <include reference="mYz-2T-2Db"/>
+                                <include reference="YFs-6r-tnD"/>
+                                <include reference="aOh-nc-6h1"/>
+                                <exclude reference="vgt-OA-fSW"/>
+                                <include reference="zl5-0h-tkO"/>
+                                <include reference="M81-Xb-9zW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="jumpTopConstraint" destination="lel-hp-gJ7" id="a3E-ea-9yX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.3125" y="32.2265625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear_btn" width="40" height="40"/>
+        <image name="guide_btn" width="40" height="40"/>
+        <image name="jump" width="153.60000610351562" height="273.1199951171875"/>
+        <image name="rect" width="420" height="540"/>
+        <image name="reset_btn" width="40" height="40"/>
+    </resources>
+</document>
